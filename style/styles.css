@@ -29,6 +29,9 @@ h1 {
     overflow: hidden; /* Ensure text stays hidden initially */
     border-right: 0.15em solid white; /* Simulate typing cursor */
 }
+.song {
+    visibility: hidden;
+}
 
 /* Button container styling to keep the button below the text */
 .button-container {
@@ -78,12 +81,6 @@ button.fade-out {
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-}
-
-#youtube-music {
-    width: 0;
-    height: 0;
-    border: none;
 }
 
 

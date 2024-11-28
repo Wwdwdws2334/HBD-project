@@ -2,12 +2,14 @@
 const title = document.getElementById('title');
 const nextBtn = document.getElementById('next-btn');
 const imageCarousel = document.getElementById('image-carousel');
-const youtubeMusic = document.getElementById('youtube-music');
+const song = document.querySelector('.song')
 
 // When "Next" button is clicked
 nextBtn.addEventListener('click', () => {
     // Fade out the "Next" button and then hide it
     nextBtn.classList.add('fade-out');
+
+    song.play();
 
     // Show the image carousel after button fades out
     setTimeout(() => {
@@ -15,10 +17,7 @@ nextBtn.addEventListener('click', () => {
         imageCarousel.classList.remove('hidden');
         imageCarousel.hidden = false;
     }, 1000); // Wait for button fade out (1 second)
-
-    // Start playing YouTube music by updating the iframe source with autoplay
-    youtubeMusic.src = "https://www.youtube.com/embed/kt9n5E71EPI?start=0&autoplay=1";
-
+    
     // Change title to "วันที่คนน่ารักเกิดมาบนโลกนี้ไง" with typing effect after 3 seconds
     setTimeout(() => {
         title.textContent = ''; // Clear current title
