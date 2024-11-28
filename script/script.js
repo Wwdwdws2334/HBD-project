@@ -33,14 +33,14 @@ nextBtn.addEventListener('click', () => {
     // Show "รักเธอนะคะ" after 6 more seconds (30 seconds after clicking)
     setTimeout(() => {
         title.textContent = '';
-        typeText('รักเธอนะคะ 🎄'); // Call function to type the text
+        typeText('รักเธอนะคะ 🎄❤️'); // Call function to type the text
     }, 29000); // 6 seconds after the previous text
 
     // Show the image carousel after all text animations with a fade-in and slide-up effect (36 seconds total)
     setTimeout(() => {
         imageCarousel.classList.add('show'); // Add the class that triggers the animation
     }, 35000); // 6 seconds after the last text
-});
+});❤️
 
 // Function to simulate typing the text
 function typeText(text) {
