@@ -5,7 +5,7 @@ const imageCarousel = document.getElementById('image-carousel');
 const song = document.querySelector('.song');
 
 // When "Next" button is clicked
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener('touchend', () => {
     // Fade out the "Next" button and then hide it
     nextBtn.classList.add('fade-out');
 
