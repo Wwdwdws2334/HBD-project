@@ -5,7 +5,7 @@ const imageCarousel = document.getElementById('image-carousel');
 const song = document.querySelector('.song');
 
 // When "Next" button is clicked
-nextBtn.addEventListener('touchend', () => {
+nextBtn.addEventListener('click', () => {
     // Fade out the "Next" button and then hide it
     nextBtn.classList.add('fade-out');
 
@@ -40,7 +40,7 @@ nextBtn.addEventListener('touchend', () => {
     setTimeout(() => {
         imageCarousel.classList.add('show'); // Add the class that triggers the animation
     }, 35000); // 6 seconds after the last text
-});❤️
+});
 
 // Function to simulate typing the text
 function typeText(text) {
